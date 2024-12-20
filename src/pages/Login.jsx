@@ -14,7 +14,7 @@ export default function Login() {
     e.preventDefault();
     try {
       const response = await axios.post(
-        'http://localhost:8000/token', 
+        'https://python-backend-proyecto-8914a1f616dc.herokuapp.com/token', 
         new URLSearchParams({
           'username': email,
           'password': password
